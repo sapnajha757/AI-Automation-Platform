@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-oceanic: #172B36;
+  --color-arctic: #F1F6F4;
+  --color-forsythia: #FFC801;
+  --color-nocturnal: #114C5A;
+  --color-mystic: #D9E8E2;
+  --color-saffron: #FF9932;
+
+  --animate-micro: 150ms ease-out;
+  --animate-reflow: 300ms ease-in-out;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-oceanic text-arctic;
+    margin: 0;
+  }
+}
